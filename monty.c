@@ -13,10 +13,10 @@ int main(int argc, char **argv)
 	handle.line_number = 0;
 	handle.token1 = NULL;
 	handle.head = NULL;
-	
+
 	if (argc != 2)
 		argv_error();
-	
+
 	handle.fp = fopen(argv[1], "r");
 	if (handle.fp == NULL)
 	{
